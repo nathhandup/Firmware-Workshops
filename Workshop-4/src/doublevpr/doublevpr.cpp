@@ -23,7 +23,7 @@ int main() {
     // Create a double void pointer of size 24bytes (for each pointer)
     void ** vpr = (void **)malloc(24);
     // Why is this allowed? Aren't we dereferencing? 
-    *vpr = malloc(4);
+    *vpr = malloc(4); 
     *(vpr + 1) = malloc(1);
     *(vpr + 2) = malloc(4);
 
@@ -45,6 +45,7 @@ int main() {
     std::cout << "sizeof(void *): " << sizeof(void *) << "\n"; 
     std::cout << "sizeof(void **): " << sizeof(void **) << "\n";
 
+    
     free(vpr[0]);
     free(vpr[1]);
     free(vpr[2]);
