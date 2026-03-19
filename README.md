@@ -1,3 +1,3 @@
-Electrium Workshop #4 Walkthrough Examples.
+All Electrium Workshop Examples.
 
-Files in src are annotated. Modify tasks.json if you'd like to compile any one specific source file, or just copy it's contents to main.cpp and run.
+Different folders for each workshop containing different examples.
