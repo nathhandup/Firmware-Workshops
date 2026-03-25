@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <pthread.h>
 
-/* This implementation file is meant to showcase a solution to "race conditions" */
+/* This implementation file is meant to showcase a solution to "raceConditions.c" */
 /* in that we use a mutex, provided to us by pthread.h, to lock a shared variable until it is finished being used. */
 
 pthread_mutex_t lock;
