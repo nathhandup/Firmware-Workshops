@@ -12,6 +12,7 @@ void* run(void *arg) {
     /* Static variable foo which is shared between all threads */
     static int shared = 10;  
 
+    /* Create mutex_lock which each thread meets along its own execution */
     pthread_mutex_lock(&lock);
 
     /* Automatic local variable--each thread has its own */
@@ -33,6 +34,7 @@ void* run(void *arg) {
 
     shared++;  // Increment shared value
 
+    /* Unlock mutex once done with shared variable */
     pthread_mutex_unlock(&lock);
 
     return NULL;
@@ -45,6 +47,7 @@ int main(void) {
     /* Array of thread ID's */
     pthread_t t[THREAD_COUNT];
 
+    /* Initialize our mutex and have it point to lock */
     pthread_mutex_init(&lock, NULL);
 
     /* Creating THREAD_COUNT amount of threads. */
@@ -57,5 +60,6 @@ int main(void) {
         pthread_join(t[i], NULL);
     }
 
+    /* Kill it! */
     pthread_mutex_destroy(&lock);
 }
