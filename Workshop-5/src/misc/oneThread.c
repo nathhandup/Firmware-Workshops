@@ -17,23 +17,21 @@ void* myThreadFunction(void* arg) {
 }
 
 pthread_t thread;
-pthread_t thread2;
 
 int main() {
-    /* Create our two threads. */
+    /* Create our two thread. */
+    /* ARGS: 
+    /* Pointer to pthread_t, config (NULL for default),  a function, and argument passed */
     pthread_create(&thread, NULL, myThreadFunction, NULL);
-    pthread_create(&thread2, NULL, myThreadFunction, NULL);
 
     sleep(5); // doing stuff..
 
-    /* Cancel our threads */
+    /* Cancel our thread */
     pthread_cancel(thread);
-    pthread_cancel(thread2);
 
     /* Wait for them to fully clean */
     /* Basically joining them with our "main" thread */
     pthread_join(thread, NULL);
-    pthread_join(thread2, NULL);
 
     printf("Main thread finished.\n");
 }

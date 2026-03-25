@@ -3,6 +3,16 @@
 #include <pthread.h>
 #include <time.h>
 
+/* This implementatino file is a little more complicated, but all we are doing is */
+/* creating 3 arbitrary matrices, and performing a bunch of arbitrary computations. */
+/* We create threads to deal with these computations, and time the process. */
+
+/* This file is meant to be compared to multithreading.c, and observe how no multithreading */
+/* is faster. */
+
+/* parallelism is not free. there is overhead. For small programs, 
+/* sequential code is better. for large problems, threading wins. */
+
 #define M 3
 #define K 3
 #define N 3
