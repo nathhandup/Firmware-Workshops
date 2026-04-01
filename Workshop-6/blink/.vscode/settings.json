@@ -11,7 +11,7 @@
   "clangd.arguments": [
     "--background-index",
     "--query-driver=**",
-    "--compile-commands-dir=c:\\Users\\nated\\OneDrive\\Desktop\\projects\\blink\\build"
+    "--compile-commands-dir=c:\\Users\\nated\\OneDrive\\Desktop\\projects\\Firmware-Workshops\\Workshop-6\\sample_project\\build"
   ],
   "idf.portWin": "COM7",
   "idf.flashType": "UART"
