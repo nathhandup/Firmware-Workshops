@@ -12,7 +12,7 @@
   "clangd.arguments": [
     "--background-index",
     "--query-driver=**",
-    "--compile-commands-dir=c:\\Users\\nated\\OneDrive\\Desktop\\projects\\Firmware-Workshops\\Workshop-6\\blink\\build"
+    "--compile-commands-dir=c:\\Users\\nated\\OneDrive\\Desktop\\projects\\Firmware-Workshops\\Workshop-6\\blink-priorities\\build"
   ],
   "idf.flashType": "UART"
 }
