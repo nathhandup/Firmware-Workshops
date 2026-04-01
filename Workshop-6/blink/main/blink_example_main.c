@@ -6,7 +6,7 @@
 #include "led_strip.h"
 #include "sdkconfig.h"
 
-static const char *TAG = "example";
+static const char *TAG = "LOG";
 
 #define BLINK_GPIO 2
 
