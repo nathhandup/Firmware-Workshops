@@ -50,6 +50,6 @@ void app_main(void)
         2048,             // Stack size
         NULL,             // Parameter
         5,                // Priority
-        NULL              // Task handle
+        NULL              // Task handle TaskHandle_t
     );
 }

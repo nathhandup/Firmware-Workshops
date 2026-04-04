@@ -55,5 +55,7 @@
   "C_Cpp_Runner.useLeakSanitizer": false,
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
-  "C_Cpp_Runner.msvcSecureNoWarnings": false
+  "C_Cpp_Runner.msvcSecureNoWarnings": false,
+  "cmake.sourceDirectory": "C:/Users/nated/OneDrive/Desktop/projects/Firmware-Workshops/Workshop-6/blink",
+  "idf.currentSetup": "C:\\Users\\nated\\esp\\v5.5.1\\esp-idf"
 }
